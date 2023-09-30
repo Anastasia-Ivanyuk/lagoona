@@ -4,55 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="header-left">
-          <a href="#" class="header-logo">
-            <img src="img/logo.jpg" alt="Logo" class="header-logo" />
-          </a>
-          <a href="tel:+74953225448" class="header-contact">+7 495 322-54-48</a>
+        <div class="top-header flex">
+          <div class="header-left flex">
+            <a href="#" class="header-logo">
+              <img src="img/logo.jpg" alt="Logo" class="header-logo" />
+            </a>
+            <a href="tel:+74953225448" class="header-contact"
+              >+7 495 322-54-48</a
+            >
+          </div>
+          <div class="header-right">
+            <a href="#" class="header-yellow-link yellow-link">
+              Личный кабинет
+            </a>
+          </div>
         </div>
-        <div class="header-right">
-          <svg
-            class="header-icon-arrow"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect width="24" height="24" fill="#E5E5E5" />
-            <g id="1921">
-              <rect
-                width="1920"
-                height="5677"
-                transform="translate(-1390 -45)"
-                fill="#F1F1F1"
-              />
-              <g id="1">
-                <g id="Group 19">
-                  <g id="Component 7">
-                    <g id="keyboard_tab">
-                      <path
-                        id="Vector"
-                        d="M11.59 7.41L15.17 11H1V13H15.17L11.58 16.59L13 18L19 12L13 6L11.59 7.41ZM20 6V18H22V6H20Z"
-                        fill="#CC9933"
-                      />
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </g>
-          </svg>
-          <a href="#" class="header-yellow-link yellow-link">
-            Личный кабинет
-          </a>
-        </div>
-        <div class="header-row">
+        <div class="header-row flex">
           <nav class="header-nav">
-            <ul class="header-list">
+            <ul class="list-reset header-list flex">
               <li class="header-list-item">
                 <a href="#" class="header-link">О нас</a>
               </li>
@@ -73,28 +48,30 @@
               </li>
             </ul>
           </nav>
-          <button class="btn header-btn">Хочу тур</button>
-          <button class="btn header-btn-call">Обратный звонок</button>
+          <div class="header-buttons flex">
+            <button class="btn-reset btn header-button">Хочу тур</button>
+            <button class="btn-reset btn header-button">Обратный звонок</button>
+          </div>
         </div>
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero section-offset">
         <div class="container">
           <div class="hero-contant">
             <h3 class="section-title">Спецпредложения</h3>
-            <ul class="hero-list">
-              <li class="hero-list-item">
-                <h1 class="hero-item-title">Мальдивские острова</h1>
+            <ul class="list-reset hero-list flex">
+              <li class="hero-list-item flex">
+                <!-- <h1 class="hero-item-title">Мальдивские острова</h1> --> проблемы с заголовками
                 <p class="hero-item-desc">от 55 000 ₽</p>
                 <a href="#" class="hero-item-link yellow-link">Подробнее</a>
               </li>
-              <li class="hero-list-item">
+              <li class="hero-list-item flex">
                 <h2 class="hero-item-title">Горящий тур на&nbsp;остров Крит</h2>
                 <p class="hero-item-desc">от 30 000 ₽</p>
                 <a href="#" class="hero-item-link yellow-link">Подробнее </a>
               </li>
-              <li class="hero-list-item hero-big-item">
+              <li class="hero-list-item hero-big-item flex">
                 <h2 class="hero-item-title hero-big-item-title">
                   Номера категории люкс
                 </h2>
@@ -105,10 +82,10 @@
           </div>
         </div>
       </section>
-      <section id="#" class="about-us">
+      <section id="#" class="section-offset about-us">
         <div class="container">
           <div class="about-us-contant">
-            <h3 class="section-title">О нас</h3>
+            <!-- <h3 class="section-title">О нас</h3> -->
             <p class="about-us-contant">
               Идейные соображения высшего порядка, а&nbsp;также сложившаяся
               структура организации влечёт за&nbsp;собой процесс внедрения
@@ -124,17 +101,17 @@
           </div>
         </div>
       </section>
-      <section id="#" class="services">
+      <section id="#" class="section-offset services">
         <div class="container">
           <div class="services-contant">
-            <h3 class="section-title">Услуги</h3>
-            <ul class="services-list">
+            <!-- <h3 class="section-title">Услуги</h3> -->
+            <ul class="list-reset services-list">
               <li class="services-list-item">
                 <div class="services-item-image">
                   <img src="img/serv-foto1.jpg" alt="Бокалы с игрыстым" />
                 </div>
                 <div class="services-item-desc">
-                  <a href="#" class="services-item-link">
+                  <!-- <a href="#" class="services-item-link"> --> заголовок
                     Эксклюзивное обслуживание
                   </a>
                   <p class="services-item-text">
@@ -189,13 +166,13 @@
           </div>
         </div>
       </section>
-      <section id="#" class="advantages">
+      <section id="#" class="section-offset advantages">
         <div class="container">
           <div class="advantages-content">
-            <h3 class="section-title">Преимущества</h3>
-            <ul class="advantages-list">
-              <li class="advantages-list-item">
-                <svg
+            <!-- <h3 class="section-title">Преимущества</h3> --> h2
+            <ul class="list-reset advantages-list">
+              <!-- <li class="advantages-list-item"> -->  заголовок добавить и скрыть
+                <!-- <svg -->
                   class="advantages-image"
                   width="64"
                   height="66"
@@ -226,7 +203,7 @@
                           <g id="Group">
                             <path
                               id="Vector"
-                              d="M37.95 58.4074H20.2875C11.375 58.4074 4.125 50.9308 4.125 41.7398V25.9359C4.125 24.9047 4.9375 24.0797 5.925 24.0797C6.9125 24.0797 7.725 24.9176 7.725 25.9359V41.7527C7.725 48.8941 13.35 54.6949 20.275 54.6949H37.9375C38.9375 54.6949 39.7375 55.5328 39.7375 56.5512C39.75 57.5824 38.95 58.4074 37.95 58.4074Z"
+                              d="M37.95 58.4074H20.2875C11.375 58.4074 4.125 50.930`4.125 41.7398V25.9359C4.125 24.9047 4.9375 24.0797 5.925 24.0797C6.9125 24.0797 7.725 24.9176 7.725 25.9359V41.7527C7.725 48.8941 13.35 54.6949 20.275 54.6949H37.9375C38.9375 54.6949 39.7375 55.5328 39.7375 56.5512C39.75 57.5824 38.95 58.4074 37.95 58.4074Z"
                               fill="#2D527C"
                             />
                             <path
@@ -302,7 +279,7 @@
                             d="M24.4625 43.1578H14.75C13.525 43.1578 12.525 42.1266 12.525 40.8633V24.6211H26.675V40.8633C26.675 42.1395 25.6875 43.1578 24.4625 43.1578Z"
                             fill="#CEE8FA"
                           />
-                          <path
+                          <!-- <path -->
                             id="Vector_16"
                             d="M24.4625 45.027H14.75C12.5375 45.027 10.725 43.1707 10.725 40.8762V24.634C10.725 23.6028 11.5375 22.7778 12.525 22.7778H26.675C27.675 22.7778 28.475 23.6156 28.475 24.634V40.8762C28.4875 43.1578 26.675 45.027 24.4625 45.027ZM14.3375 26.4903V40.8762C14.3375 41.1082 14.525 41.3016 14.75 41.3016H24.4625C24.6875 41.3016 24.875 41.1082 24.875 40.8762V26.4903H14.3375Z"
                             fill="#2D527C"
@@ -1055,11 +1032,11 @@
           </div>
         </div>
       </section>
-      <section id="#" class="placement">
+      <section id="#" class="section-offset placement">
         <div class="container">
           <div class="placement-content">
             <h3 class="section-title">Размещение</h3>
-            <ul class="placement-list">
+            <ul class="list-reset placement-list">
               <li class="placement-list-item">
                 <div class="placement-item-image">
                   <img src="img/plac-1.jpg" alt="Вид на отель с бассейном" />
@@ -1073,9 +1050,9 @@
                     <img src="img/star-yellow.png" alt="" />
                     <img src="img/star-white.png" alt="" />
                   </div>
-                  <p class="placement-text">Lagoona espa&ntilde;ola</p>
+                  <!-- <p class="placement-text">Lagoona espa&ntilde;ola</p> --> h3 заголовок
                   <p class="placement-location">Барселона, Испания</p>
-                  <button class="btn placement-btn">Номера</button>
+                  <button class="btn-reset btn placement-btn">Номера</button>
                 </div>
               </li>
               <li class="placement-list-item">
@@ -1093,7 +1070,7 @@
                   </div>
                   <p class="placement-text">Lagoona son t&iacute;picas</p>
                   <p class="placement-location">Барселона, Испания</p>
-                  <button class="btn placement-btn">Номера</button>
+                  <button class="btn-reset btn placement-btn">Номера</button>
                 </div>
               </li>
               <li class="placement-list-item">
@@ -1111,7 +1088,7 @@
                   </div>
                   <p class="placement-text">Lagoona de&nbsp;la&nbsp;guerra</p>
                   <p class="placement-location">Барселона, Испания</p>
-                  <button class="btn placement-btn">Номера</button>
+                  <button class="btn-reset btn placement-btn">Номера</button>
                 </div>
               </li>
               <li class="placement-list-item">
@@ -1129,7 +1106,7 @@
                   </div>
                   <p class="placement-text">Lagoona mentira piadosa</p>
                   <p class="placement-location">Барселона, Испания</p>
-                  <button class="btn placement-btn">Номера</button>
+                  <button class="btn-reset btn placement-btn">Номера</button>
                 </div>
               </li>
               <li class="placement-list-item">
@@ -1149,7 +1126,7 @@
                     Lagoona empujar la&nbsp;creatividad
                   </p>
                   <p class="placement-location">Барселона, Испания</p>
-                  <button class="btn placement-btn">Номера</button>
+                  <button class="btn-reset btn placement-btn">Номера</button>
                 </div>
               </li>
               <li class="placement-list-item">
@@ -1167,7 +1144,7 @@
                   </div>
                   <p class="placement-text">Lagoona el&nbsp;retorno</p>
                   <p class="placement-location">Барселона, Испания</p>
-                  <button class="btn placement-btn">Номера</button>
+                  <button class="btn-reset btn placement-btn">Номера</button>
                 </div>
               </li>
               <li class="placement-list-item">
@@ -1185,7 +1162,7 @@
                   </div>
                   <p class="placement-text">Lagoona mentira piadosa</p>
                   <p class="placement-location">Барселона, Испания</p>
-                  <button class="btn placement-btn">Номера</button>
+                  <button class="btn-reset btn placement-btn">Номера</button>
                 </div>
               </li>
               <li class="placement-list-item">
@@ -1205,7 +1182,7 @@
                     Lagoona suerte sigui&oacute; siempre
                   </p>
                   <p class="placement-location">Барселона, Испания</p>
-                  <button class="btn placement-btn">Номера</button>
+                  <button class="btn-reset btn placement-btn">Номера</button>
                 </div>
               </li>
               <li class="placement-list-item placement-item-preview">
