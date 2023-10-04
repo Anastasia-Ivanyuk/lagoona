@@ -46,7 +46,8 @@ body {
 }
 
 .container {
-    width: 1200px;
+    max-width: 1170px;
+    width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -79,7 +80,7 @@ body {
 .header-row {
     padding: 27px 50px;
     justify-content: space-between;
-    outline: 1px solid coral;
+    outline: 1px solid gray;
 }
 
 
@@ -92,33 +93,46 @@ body {
 }
 
 /*hero*/
+
 .hero-list {
-    width: 1170px;
-    height: 540px;
-    flex-direction: column;
-    flex-wrap: wrap;
-
+    min-height: 540px;
+    justify-content: space-between;
 }
 
-.hero-list-item {
+.hero-list__item {
     max-width: 573px;
-    min-height: 258px;
-    flex-direction: column;
-    outline: 1px solid coral;
+    width: 100%;
 }
 
-.hero-list-item:first-child {
+.hero-item-list {
+    height: 100%;
+}
+
+
+.hero-card {
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid coral;
+    border-radius: 15px;
+}
+
+.hero-card__desc {
+
+}
+
+.hero-item-list__item {
+    min-height: 258px;
+
+}
+
+.hero-item-list__item:first-child {
     margin-bottom: 24px;
 }
 
-.hero-big-item {
-    max-width: 573px;
-    flex-grow: 1;
+.hero-card_big {
+    height: 100%;
 }
 
-.hero-item-text {
-    padding: 40px 45px;
-}
 
 /*about-us*/
 .about-us-contant {
@@ -131,7 +145,7 @@ body {
 }
 
 .services-list-item {
-    max-width: 573px;
+    max-width: 571px;
     min-height: 330px;
     margin-bottom: 24px;
     border: 1px solid coral;
