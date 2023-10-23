@@ -583,6 +583,205 @@
           </div>
         </div>
       </section>
+      <section id="#" class="section-offset WantTour">
+        <div class="container">
+          <div class="wanttour-content">
+            <h2 class="section-title wanttour-content__title">Хочу тур</h2>
+            <div class="wanttour-content__form">
+              <form
+                action="https://jsonplaceholder.typicode.com/posts"
+                method="post"
+                class="form flex"
+              >
+                <div class="label-form flex">
+                  <label class="label" for="city"> Город вылета </label>
+                  <select class="select select-city" name="city" id="city">
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Москва">Ташкент</option>
+                  </select>
+                </div>
+                <div class="label-form flex">
+                  <label class="label" for="country"> Страна </label>
+                  <select
+                    class="select select-country"
+                    name="country"
+                    id="country"
+                  >
+                    <option value="Австралия">Австралия</option>
+                    <option value="Казахстан">Казахстан</option>
+                  </select>
+                </div>
+                <div class="label-form flex">
+                  <label class="label" for="date"> Дата прибытия </label>
+                  <input
+                    class="input input-date"
+                    name="date"
+                    type="date"
+                    id="date"
+                    value="2021-10-18"
+                  />
+                </div>
+                <div class="label-form flex">
+                  <label class="label" for="number"> Ночей </label>
+                  <input
+                    class="input-number"
+                    name="number"
+                    id="number"
+                    type="number"
+                    value="6"
+                    min="1"
+                    max="30"
+                  />
+                </div>
+                <div class="label-form flex">
+                  <label class="label" for="numbertour"> Туристы </label>
+                  <input
+                    class="input-number"
+                    name="number"
+                    id="numbertour"
+                    type="number"
+                    required
+                    value="2"
+                    min="1"
+                    max="6"
+                  />
+                </div>
+                <button class="btn btn-reset btn-form" type="submit">
+                  Найти
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="#" class="section-offset contacts">
+        <div class="container">
+          <h2 class="section-title">Контакты</h2>
+          <ul class="contacts-list list-reset flex">
+            <li class="contacts-list__item_left">
+              <ul class="item_left__list list-reset">
+                <li class="item_left__item flex">
+                  <strong class="item_left__item-title adress__title">
+                    Адрес
+                  </strong>
+                  <p class="item_left__item-text">
+                    Москва, улица Юности, дом 5 строение 4, офис 2
+                  </p>
+                </li>
+                <li class="item_left__item flex">
+                  <strong class="item_left__item-title phone__title">
+                    Телефоны
+                  </strong>
+                  <p class="item_left__item-text">
+                    <a class="item_left__item-link" href="tel:+74995356434"
+                      >+7 499 535-64-34</a
+                    >
+                    <a class="item_left__item-link" href="tel:+74950050544"
+                      >+7 495 005-05-44</a
+                    >
+                  </p>
+                </li>
+                <li class="item_left__item item_left__item_mail flex">
+                  <strong class="item_left__item-title mail__title">
+                    Email
+                  </strong>
+                  <p class="item_left__item-text flex">
+                    <a class="item_left__item-link" href="lg.oona@mail.ru"
+                      >lg.oona@mail.ru</a
+                    >
+                    <span class="item_left__item-desc"
+                      >по вопросам бронирования</span
+                    >
+                    <a class="item_left__item-link" href="hotels.ln@mail.ru"
+                      >hotels.ln@mail.ru</a
+                    >
+                    <span class="item_left__item-desc"
+                      >по вопросам сотрудничества</span
+                    >
+                  </p>
+                </li>
+                <li class="item_left__item item__grafic flex">
+                  <strong class="item_left__item-title grafic__title">
+                    График
+                  </strong>
+                  <p class="item_left__item-text">
+                    Понедельник-пятница, с 10:00 до 19:00
+                  </p>
+                </li>
+              </ul>
+              <button class="btn btn-reset contacts-btn">
+                Построить маршрут
+              </button>
+            </li>
+            <li class="contacts-list__item_right">
+              <img
+                class="contacts-image"
+                src="/img/lagoona-cont.jpg"
+                width="653"
+                height="528"
+                alt="Ресепшен сети отелей Лагуна"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-content flex">
+          <ul class="footer-left__list list-reset">
+            <li class="footer-left__item_lag footer-desc">
+              © 2012–2020 Управляющая компания Объединённой сети «Лагуна Хотелс»
+            </li>
+            <li class="footer-left__item_text footer-desc">
+              Представленная на сайте информация носит справочный характер
+              и не является публичной офертой
+            </li>
+            <li class="footer-left__item_link footer-link">
+              <a href="#">Пользовательское соглашение</a>
+            </li>
+          </ul>
+          <ul class="footer-center__list list-reset">
+            <li class="footer-center__item_text footer-desc">
+              11710, улица Юности, дом 5 строение 4, офис 2
+            </li>
+            <li class="footer-center__item_tel footer-link">
+              <a href="tel:+74995356434">+7 499 535-64-34</a>
+              <a href="tel:+74950050544">+7 495 005-05-44</a>
+            </li>
+            <li class="footer-center__item_mail footer-link">
+              <a href="lg.oona@mail.ru">lg.oona@mail.ru</a>
+              <a href="hotels.ln@mail.ru">hotels.ln@mail.ru</a>
+            </li>
+          </ul>
+          <ul class="footer-right__list list-reset">
+            <li class="footer-right__item">
+              <a
+                class="footer-icon icon-sova"
+                href="https://www.duolingo.com"
+                alt="Сова"
+                ><img src="/img/sova.svg" alt="Сова"
+              /></a>
+            </li>
+            <li class="footer-right__item">
+              <a
+                class="footer-icon icon-ok"
+                href="https://ok.ru"
+                alt="Одноклассники"
+                ><img src="/img/ok.svg" alt="Одноклассники"
+              /></a>
+            </li>
+            <li class="footer-right__item">
+              <a
+                class="footer-icon icon-wk"
+                href="https://vk.com"
+                alt="Вконтакте"
+                ><img src="/img/wk.svg" alt="Вконтакте"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
